@@ -1,0 +1,554 @@
+/* color variables */
+:root {
+    --bright-red: hsl(12, 88%, 59%);
+    --dark-blue: hsl(228, 39%, 23%);
+    --dark-grayish-blue: hsl(227, 12%, 61%);
+    --grayish-blue: hsl(227, 12%, 97%);
+    --very-dark-blue: hsl(233, 12%, 13%);
+    --very-pale-red: hsl(13, 100%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* base properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: var(--very-light-gray);
+}
+
+/* end of base properties */
+.nav-item {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: var(--dark-blue);
+}
+
+.nav-link:hover {
+    color: var(--dark-grayish-blue);
+}
+
+.ab {
+    color: var(--very-light-gray);
+}
+
+.ab:hover {
+    color: var(--very-light-gray);
+}
+
+.button-link {
+    background-color: var(--bright-red);
+    border-radius: 1.2rem;
+    padding: 1px 10px;
+}
+
+.button-link:hover {
+    opacity: 0.7;
+}
+
+.intro-section {
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: right center;
+}
+
+.intro-text h1 {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.intro-text p,
+.different-div p,
+.different-sub p,
+.testifier-div p {
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+}
+
+.intro-text button {
+    outline: none;
+    border: none;
+    padding: 7px 20px;
+    color: var(--very-light-gray);
+}
+
+.flex button {
+    color: var(--very-light-gray);
+}
+
+.manage-div {
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+}
+
+.different-div h2,
+.flex h3 {
+    color: var(--dark-blue);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex button {
+    background-color: var(--bright-red);
+    outline: none;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 0px 20px;
+    height: 30px;
+}
+
+.carousel-div h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-blue);
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.testifier-div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: var(--grayish-blue);
+    padding-right: 20px;
+    padding-left: 15px;
+    margin-top: 60px;
+}
+
+.testifier-div img {
+    width: 70px;
+    margin-top: -29px;
+}
+
+.testifier-div h5 {
+    color: var(--dark-blue);
+    margin-top: 20px;
+}
+
+.testifier-div p {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.get-started-btn {
+    background-color: var(--bright-red);
+    outline: none;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 1.2rem;
+    color: var(--very-light-gray);
+}
+
+.get-started-btn:hover {
+    opacity: 0.7;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simplify-div {
+    background-color: var(--bright-red);
+    margin-top: 100px;
+}
+
+.simplify-div h5 {
+    color: var(--very-light-gray);
+    font-size: 2rem;
+}
+
+.simplify-div button {
+    outline: none;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 7px 20px;
+    color: var(--bright-red);
+}
+
+.simplify-div button:hover {
+    opacity: 0.7;
+}
+
+footer {
+    background-color: var(--very-dark-blue);
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-grp-2, .footer-grp-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-grp-2 a, .footer-grp-3 a {
+    text-decoration: none;
+    color: var(--very-light-gray);
+}
+
+.footer-grp-2 a:hover, .footer-grp-3 a:hover {
+    color: var(--bright-red);
+}
+
+.input-div input, .input-div button {
+    border-radius: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+.input-div input {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.input-div input::placeholder {
+    font-size: 14px;
+}
+
+.input-div button {
+    padding: 7px 20px;
+    background-color: var(--bright-red);
+    color: var(--very-light-gray);
+    margin-left: 5px;
+}
+
+.input-div button:hover {
+    opacity: 0.7;
+}
+
+.copyright-div h6 {
+    color: var(--very-light-gray);
+    margin-top: 65px;
+}
+
+
+/* for screens greater than 900px */
+@media screen and (min-width: 900px) {
+    .navbar-brand {
+        padding-left: 100px;
+    }
+
+    .navbar {
+        padding-top: 30px;
+    }
+
+    .nav2 {
+        padding-left: 100px;
+    }
+
+    .nav3 {
+        padding-right: 60px;
+    }
+
+    .intro-part {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 70px;
+        padding-left: 90px;
+    }
+
+    .illustration-div {
+        width: 40%;
+        margin-right: 150px;
+    }
+
+    .intro-text {
+        width: 40%;
+    }
+
+    .intro-text h1 {
+        width: 90%;
+        font-size: 3rem;
+    }
+
+    .intro-text p {
+        width: 69%;
+        margin-top: 20px;
+    }
+
+    .intro-text button {
+        margin-top: 15px;
+    }
+
+    .manage-div {
+        display: flex;
+        margin-top: 90px;
+        margin-left: 65px;
+    }
+
+    .different-div {
+        width: 40%;
+    }
+
+    .manage-2 {
+        width: 40%;
+        margin-left: 135px;
+        margin-top: 12px;
+    }
+
+    .flex h3 {
+        font-size: 1.2rem;
+        padding-left: 20px;
+    }
+
+    .different-sub p {
+        width: 70%;
+        margin-left: 80px;
+    }
+
+    .different-div h2 {
+        width: 90%;
+        font-size: 2.7rem;
+    }
+
+    .different-div p {
+        width: 69%;
+        margin-top: 20px;
+    }
+
+    .different-div {
+        padding-left: 51px;
+    }
+
+    .testifier-div {
+        width: 500px;
+    }
+
+    .simplify-div {
+        background-image: url("../images/bg-simplify-section-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
+
+    .simplify-div h5 {
+        width: 40%;
+        padding-left: 100px;
+    }
+
+    .simplify-div button {
+        margin-right: 100px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-div {
+        display: flex;
+    }
+
+    .footer-grp-2 {
+        margin-right: 100px;
+    }
+
+    .footer-grp-2 a, .footer-grp-3 a {
+        margin-bottom: 12px;
+    }
+
+    .icon-div {
+        margin-top: 80px;
+    }
+    
+    .icon-div img {
+        padding-right: 10px;
+    }
+
+}
+
+/* for screens lesser than 900px */
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .intro-part {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .illustration-img {
+        text-align: center;
+        width: 90%;
+    }
+
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .intro-text h1 {
+        width: 85%;
+        font-size: 2.1rem;
+    }
+
+    .intro-text p {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    .intro-text button {
+        margin-top: 5px;
+    }
+
+    .manage-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .different-div {
+        width: 80%;
+        margin-top: 70px;
+    }
+
+    .different-div p {
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+
+    .flex {
+        background-color: var(--very-pale-red);
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .flex h3 {
+        font-size: 0.9rem;
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+
+    .different-sub p {
+        width: 80%;
+        font-size: 0.9rem;
+        margin-left: 19px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .different-sub {
+        margin-bottom: 20px;
+    }
+
+    .manage-2 {
+        margin-top: 20px;
+    }
+
+    .testifier-div {
+        width: 300px;
+    }
+
+    .simplify-div {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: url("../images/bg-simplify-section-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .simplify-div h5 {
+        width: 70%;
+        text-align: center;
+    }
+
+    .simplify-btn {
+        margin-top: 15px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .nav-div {
+        display: flex;
+        margin-top: 40px;
+        margin-left: -20px;
+    }
+
+    .footer-grp-2 {
+        margin-right: 50px;
+    }
+
+    .footer-grp-3 {
+        margin-top: 1px;
+    }
+
+    .footer-grp-2 a, .footer-grp-3 a {
+        margin-bottom: 10px;
+    }
+
+    .footer-grp-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .icon-div {
+        margin-bottom: 25px;
+    }
+
+    .icon-div img {
+        padding-right: 25px;
+    }
+    
+    .logo {
+        width: 60%;
+    }
+
+    .carousel-div-a {
+        width: 100%;
+    }
+
+    .container-lg {
+        text-align: center;
+    }
+}
